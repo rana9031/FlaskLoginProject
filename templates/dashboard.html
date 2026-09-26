@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container dashboard">
+
+        <h1>Welcome to Dashboard</h1>
+
+        <h2>Welcome {{ session['user_name'] }}!</h2>
+
+        <p>Login Successfully.</p>
+
+        <a href="/logout">
+            <button>Logout</button>
+        </a>
+
+    </div>
+
+</body>
+</html>
